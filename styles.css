@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 0;
+    background-image:url("https://media.istockphoto.com/id/1169630303/photo/blue-textured-background.webp?b=1&s=170667a&w=0&k=20&c=tI2xFhXqXFqMM0IvxSYY3F7LIwv450h2ch3yD-lZ9HU=");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #f4f4f4;
+}
+.header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+nav {
+    background-color: #333;
+}
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.navbar li {
+    float: left;
+    margin-top: 10px;
+}
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar li a:hover {
+    background-color: #111;
+}
+.container {  
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    position: relative;
+}
+.image {
+    position: relative;
+}
+.image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
+.box
+{
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    height: auto;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+#about h2,
+#skills h2,
+#courses h2 {
+    color: #ffc107;
+}
+
+#about p {
+    text-align: center;
+    font-size: 18px;
+    color: #ddd;
+}
+
+.skills-grid,
+.courses-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.skill,
+.course {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skill h3,
+.course h3 {
+    margin-top: 0;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.social-media a:hover {
+    color: #ffc107;
+}
+
