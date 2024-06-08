@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .calculator {
+            max-width: 400px;
+            margin: 50px auto;
+        }
+        .calculator-screen {
+            height: 80px;
+            width: 100%;
+            background-color: #fff;
+            border: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            text-align: right;
+            padding: 10px 20px;
+            font-size: 2.4em;
+            color: #333;
+        }
+        .calculator-keys button {
+            height: 80px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator card">
+            <input type="text" class="calculator-screen" value="" disabled />
+            <div class="calculator-keys card-body">
+                <div class="row">
+                    <button type="button" class="btn btn-light col-3">7</button>
+                    <button type="button" class="btn btn-light col-3">8</button>
+                    <button type="button" class="btn btn-light col-3">9</button>
+                    <button type="button" class="btn btn-warning col-3">/</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-light col-3">4</button>
+                    <button type="button" class="btn btn-light col-3">5</button>
+                    <button type="button" class="btn btn-light col-3">6</button>
+                    <button type="button" class="btn btn-warning col-3">*</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-light col-3">1</button>
+                    <button type="button" class="btn btn-light col-3">2</button>
+                    <button type="button" class="btn btn-light col-3">3</button>
+                    <button type="button" class="btn btn-warning col-3">-</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-light col-3">0</button>
+                    <button type="button" class="btn btn-light col-3">.</button>
+                    <button type="button" class="btn btn-danger col-3">C</button>
+                    <button type="button" class="btn btn-warning col-3">+</button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-success col-12">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const calculator = document.querySelector('.calculator');
+            const keys = calculator.querySelector('.calculator-keys');
+            const display = calculator.querySelector('.calculator-screen');
+            let firstValue = '';
+            let operator = '';
+            let secondValue = '';
+
+            keys.addEventListener('click', function(e) {
+                const key = e.target;
+                const action = key.textContent;
+
+                if (key.matches('button')) {
+                    if (!isNaN(action) || action === '.') {
+                        if (operator) {
+                            secondValue += action;
+                        } else {
+                            firstValue += action;
+                        }
+                        display.value += action;
+                    }
+
+                    if (['+', '-', '*', '/'].includes(action)) {
+                        operator = action;
+                        display.value += ' ' + action + ' ';
+                    }
+
+                    if (action === 'C') {
+                        firstValue = '';
+                        operator = '';
+                        secondValue = '';
+                        display.value = '';
+                    }
+
+                    if (action === '=') {
+                        let result;
+                        switch (operator) {
+                            case '+':
+                                result = parseFloat(firstValue) + parseFloat(secondValue);
+                                break;
+                            case '-':
+                                result = parseFloat(firstValue) - parseFloat(secondValue);
+                                break;
+                            case '*':
+                                result = parseFloat(firstValue) * parseFloat(secondValue);
+                                break;
+                            case '/':
+                                result = parseFloat(firstValue) / parseFloat(secondValue);
+                                break;
+                        }
+                        display.value = result;
+                        firstValue = result;
+                        operator = '';
+                        secondValue = '';
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
