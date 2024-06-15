@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.packaging-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
