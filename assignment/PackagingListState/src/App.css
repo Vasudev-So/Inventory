@@ -1,0 +1,25 @@
+/* App.css */
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item.packed {
+  background-color: green;
+  color: white;
+}
+
+.item.heavy {
+  background-color: black;
+  color: white;
+}
