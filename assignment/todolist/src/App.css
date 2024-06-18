@@ -1,0 +1,17 @@
+.box {
+  width: 600px;         /* Set the width of the box */
+  height: 400px;        /* Set the height of the box */
+  background-color: #cf7a7a; /* Background color of the box */
+  border: 2px solid #000000;    /* Border color and thickness */
+  padding: 20px;        /* Space inside the box */
+  margin: 20px;         /* Space outside the box */
+  border-radius: 50px;  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for 3D effect */
+  display: flex;        /* Flexbox layout */
+  align-items: center;  /* Center items vertically */
+  justify-content: center;
+  top: 20px; /* Center items horizontally */
+  text-align: center;   /* Center text */
+}
+
+
