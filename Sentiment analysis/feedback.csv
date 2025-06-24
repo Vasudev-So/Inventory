@@ -1,0 +1,34 @@
+timestamp,user_id,feedback,sentiment
+2025-05-27T05:47:07.910084,1,it was good experience but needs improvement.,0.0087298387661576
+2025-05-27T05:48:06.320326,manager was too strict with schedule.,manager was too strict with schedule,0.0009896490955725
+2025-05-27T05:48:17.024862,1,manager was too strict with schedule,0.0009896490955725
+2025-05-27T05:49:38.184890,1,it is good for mental health so  we have to experince from time to time,0.9778842329978944
+2025-05-28T04:53:34.143939,1,"""I love the new update, it made everything so much easier!",0.9998045563697816
+2025-05-28T04:53:34.179941,1,"""Great customer service, very helpful and polite.""",0.9998446702957152
+2025-05-28T04:53:34.214939,1,"""Everything worked perfectly. I’m very satisfied.""",0.9998672008514404
+2025-05-28T04:53:34.250940,1,"""The interface is clean and intuitive. Well done!""",0.9998252987861632
+2025-05-28T04:53:34.285943,1,"""Thank you for resolving my issue so quickly.""",0.9989596605300904
+2025-05-28T04:53:34.323939,1,"""This is the worst experience I’ve ever had.""",0.0002317885082447
+2025-05-28T05:40:12.042388,1,"""Excellent product, I will definitely reco
+2025-05-28T04:53:34.387943,1,"""Nothing works. I’m extremely frustrated.""",0.0001963525864994
+2025-05-28T04:53:34.424310,1,"""Your support team was rude and unhelpful.""",0.0008634194382466
+2025-05-28T04:53:34.460311,1,"""The app crashes all the time. Please fix it.""",0.0003481850726529
+2025-05-28T05:40:11.948495,1,"""I love the new update, it made everything so much easier!""",0.9997962117195129
+2025-05-28T05:40:11.964175,1,"""Great customer service, very helpful and polite.""",0.9998446702957153
+2025-05-28T05:40:11.981629,1,"""Everything worked perfectly. I’m very satisfied.""",0.9998672008514404
+2025-05-28T05:40:11.996933,1,"""The interface is clean and intuitive. Well done!""",0.9998252987861633
+2025-05-28T05:40:12.014790,1,"""Thank you for resolving my issue so qmmend it.""",0.9998769760131836
+2025-05-28T05:40:12.059850,1,"""Very user-friendly and fast performance.""",0.9993416666984558
+2025-05-28T05:40:12.075665,1,"""Your support team was amazing today!""",0.999880313873291
+2025-05-28T05:40:12.100891,1,"""Super smooth experience. Keep it up!""",0.9998331069946289
+2025-05-28T05:40:12.107452,1,"""I had a wonderful experience using your app.""",0.9998264908790588
+2025-05-28T05:40:12.139356,1,"""This is the worst experience I’ve ever had.""",0.00023178850824479014
+2025-05-28T05:40:12.155468,1,"""Nothing works. I’m extremely frustrated.""",0.00019635258649941534
+2025-05-28T05:40:12.176967,1,"""Your support team was rude and unhelpful.""",0.0008634194382466376
+2025-05-28T05:40:12.196130,1,"""The app crashes all the time. Please fix it.""",0.0003481850726529956
+2025-05-28T05:40:12.215126,1,"""It took forever to get a response. Very disappointing.""",0.00019072114082518965
+2025-05-28T05:40:12.234114,1,"""I lost all my data after the update!""",0.0002367740380577743
+2025-05-28T05:40:12.254305,1,"""Too many bugs, it's unusable.""",0.0008653029217384756
+2025-05-28T05:40:12.273305,1,"""Terrible design. I can’t find anything.""",0.00024852019851095974
+2025-05-28T05:40:12.291305,1,"""You promised a fix, but nothing changed.""",0.004962904378771782
+2025-05-28T05:40:12.311304,1,"""Why does this always break? Totally unreliable.""",0.00039732750155963004
